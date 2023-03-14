@@ -3,7 +3,5 @@
 
 int main()
 {
-    int a;
-    double b;
-    int c;
+    int *p = malloc(sizeof(int));
 }
