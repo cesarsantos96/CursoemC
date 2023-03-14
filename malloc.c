@@ -3,5 +3,9 @@
 
 int main()
 {
-    int *p = malloc(sizeof(int));
+    int *p = (int *)malloc(sizeof(int));
+
+    *p = 1000;
+
+    printf("%d", *p);
 }
