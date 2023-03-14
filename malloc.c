@@ -5,7 +5,12 @@ int main()
 {
     int *p = (int *)malloc(sizeof(int));
 
-    *p = 1000;
+    if (p == NULL)
+    {
+        printf("malloc não funcionou");
+    }
 
     printf("%d", *p);
+
+    free(p);
 }
