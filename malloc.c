@@ -10,6 +10,8 @@ int main()
         printf("malloc não funcionou");
     }
 
+    *p = 42; // atribui um valor à localização de memória
+
     printf("%d", *p);
 
     free(p);

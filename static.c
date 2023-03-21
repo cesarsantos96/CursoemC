@@ -19,4 +19,6 @@ int main()
     int i;
     for (i = 0; i < 5; i++)
         incrementa();
+    system("pause");
+    return 0;
 }
