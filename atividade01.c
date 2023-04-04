@@ -4,7 +4,7 @@ int main()
 {
     int num_int = 8;       // declara uma variável inteira e atribui o valor 10
     float num_real = 3.14; // declara uma variável de ponto flutuante e atribui o valor 3.14
-    char letra = 'C';      // declara uma variável char e atribui o valor 'A'
+    char letra = 'C';      // declara uma variável char e atribui o valor 'C'
 
     // Declara ponteiros para as variáveis acima e associa cada um com o endereço das variáveis usando &
     int *p_int = &num_int;
