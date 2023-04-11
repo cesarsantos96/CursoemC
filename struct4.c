@@ -12,6 +12,7 @@ aluno receberDados()
 {
     aluno a;
     printf("Digite o nome do aluno \n");
+    fflush(stdin);
     gets(a.nome);
     printf("Digite a primeira nota do aluno \n");
     scanf("%f", &a.nota[0]);
@@ -38,11 +39,11 @@ void situacao(aluno a)
 {
     if (a.media < 7)
     {
-        printf("Aluno está reprovado");
+        printf("\nAluno está Reprovado\n");
     }
     else
     {
-        printf("Aluno está está reprovado");
+        printf("\nAluno está está Aprovado\n");
     }
 }
 
@@ -52,4 +53,9 @@ int main()
     cesar = receberDados();
     imprimirDados(cesar);
     situacao(cesar);
+
+    aluno dalva;
+    dalva = receberDados();
+    imprimirDados(dalva);
+    situacao(dalva);
 }
