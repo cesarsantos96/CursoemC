@@ -1,1 +1,2 @@
-n
+
+void situacao(aluno a)

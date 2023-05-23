@@ -5,7 +5,7 @@ typedef struct aluno
 {
     char nome[30];
     char curso[30];
-    float nota[4];
+    float nota[3];
     float media;
 } aluno;
 
@@ -39,18 +39,18 @@ void imprimirDados(aluno a)
     printf("A segunda nota foi: %2.f\n", a.nota[1]);
     printf("A terceira nota foi: %2.f\n", a.nota[2]);
     printf("A quarta nota foi: %2.f\n", a.nota[3]);
-    a.media = (a.nota[0] + a.nota[1] + a.nota[2] + a.nota[3]) / 4;
+    a.media = (a.nota[0] + a.nota[1] + a.nota[2] + a.nota[3]) / 4.0;
 }
 
 void situacao(aluno a)
 {
-    if (a.media < 7)
+    if (a.media < 6.0)
     {
         printf("\nAluno está Reprovado\n");
     }
     else
     {
-        printf("\nAluno está está Aprovado\n");
+        printf("\nAluno está Aprovado\n");
     }
 }
 
